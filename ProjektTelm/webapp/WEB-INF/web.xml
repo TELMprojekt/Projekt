@@ -4,16 +4,17 @@
     <servlet-name>siedem</servlet-name>
     <servlet-class>main.dwa</servlet-class>
   </servlet>
+  
   <servlet>
-    <servlet-name>kolejny</servlet-name>
-    <servlet-class>main.dodawanie</servlet-class>
+  <servlet-name>addPacjent</servlet-name>
+  <servlet-class>main.addPacjentServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>siedem</servlet-name>
-    <url-pattern></url-pattern>
+    <url-pattern>/os</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-    <servlet-name>kolejny</servlet-name>
-    <url-pattern>/test</url-pattern>
+  <servlet-name>addPacjent</servlet-name>
+  <url-pattern>/addpac</url-pattern>
   </servlet-mapping>
 </web-app>
