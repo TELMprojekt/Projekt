@@ -6,11 +6,7 @@
   </servlet>
   <servlet>
     <servlet-name>kolejny</servlet-name>
-    <servlet-class>main.hello</servlet-class>
-  </servlet>
-  <servlet>
-  <servlet-name>connect</servlet-name> 
-  <servlet-class>main.DbConnect</servlet-class>
+    <servlet-class>main.dodawanie</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>siedem</servlet-name>
@@ -19,9 +15,5 @@
   <servlet-mapping>
     <servlet-name>kolejny</servlet-name>
     <url-pattern>/test</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping> 
-  <servlet-name>connect</servlet-name>
-  <url-pattern>/baza</url-pattern>
   </servlet-mapping>
 </web-app>
