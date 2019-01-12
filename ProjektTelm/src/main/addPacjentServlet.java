@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
+@WebServlet("/addpac")
 public class addPacjentServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -31,7 +31,6 @@ public class addPacjentServlet extends HttpServlet {
 		Connection connect = new baza.DataBase().connection();
 		try {
 			int status = new baza.DataBase().addPacjnet(nazwisko, imie);
-			out.print("aaaa");
 		} catch (SQLException e) {
 			System.out.println(e);
 		}

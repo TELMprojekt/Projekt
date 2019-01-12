@@ -7,7 +7,16 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-<button type="button" onClick="window.location='\start.jsp'"> Wroc </button>
+<form method="POST" action="selectpac">
+		Nazwisko Pacjenta 
+        <input type="text" name="nazwisko" />
+        <br>
+        Imie pacjenta
+        <input type="text" name="imie" />
+        <br>
+        <input type="submit" name = "OK" />
+        <button type="button" onClick="window.location='\start.jsp'"> Wroc </button>
+        
+</form>
 </body>
 </html>
