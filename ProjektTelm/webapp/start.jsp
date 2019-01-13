@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Dodawanie punktow EKG</title>
+<title>Aplikacja </title>
 </head>
 <body>
 Aplikacja do dodawania punktow do przebiegu EKG. 

@@ -3,10 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
 </head>
 <body>
-
+<form action="addecg" method="POST">
+<input type="file" id="upload" name="upload" style="visibility: hidden; width: 1px; height: 1px" multiple />
+<button type="button" onclick="document.getElementById('upload').click(); return false">Otworz</button>
+</form>
 </body>
 </html>
