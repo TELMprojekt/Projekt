@@ -1,4 +1,4 @@
-package baza;
+package method;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -29,11 +29,12 @@ public class DataBase {
 		return connection;
 	}
 
-	public static int addPacjnet(String nazwisko, String imie) throws IOException, SQLException {
+	public static int addPacjnet(String nazwisko, String imie, String pesel) throws IOException, SQLException {
 		int pacjentStatus = 0;
 		String n = nazwisko;
 		String i = imie;
-		String query = "INSERT INTO pacjent.dane VALUES (NULL, '" + n + "', '" + i + "');";
+		String p = pesel;
+		String query = "INSERT INTO pacjent.dane VALUES (NULL, '" + n + "', '" + i + "', '"+p+"');";
 		Connection connect = DataBase.connection();
 		if (connect != null) {
 			try {

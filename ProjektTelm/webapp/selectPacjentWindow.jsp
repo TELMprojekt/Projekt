@@ -5,6 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Szukaj pacjenta</title>
+
 </head>
 <body>
 Wyszukiwanie pacjenta
@@ -20,6 +21,7 @@ Wyszukiwanie pacjenta
         <br>
         <input type="submit" name = "OK" />
         <button type="button" onClick="window.location='\start.jsp'"> Wroc </button>
-        
+
+</form>
 </body>
 </html>
