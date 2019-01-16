@@ -35,6 +35,7 @@ public class addPacjentServlet extends HttpServlet {
 		int i1 = new method.stringCheck().check(imie);
 		int p1 = new method.peselCheck().check(pesel);
 		if (n1 == 0 || i1 == 0) {
+			
 			request.setAttribute("message", "nazwisko");
 			request.getRequestDispatcher("addPacjentWindow.jsp").forward(request, response);
 		} else if (p1 == 0) {
